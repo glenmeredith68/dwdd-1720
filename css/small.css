@@ -83,3 +83,7 @@ h2 {
 .assignments a:hover {
     background-color: #ddd;
 }
+
+footer {
+    text-align: center;
+}
