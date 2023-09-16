@@ -1,14 +1,17 @@
 let count = 0;
-let saveP = document.getElementById('save-el');
+let saveP = document.querySelector('#save-el');
+let incrementBtn = document.querySelector('#increment-btn');
+let saveBtn = document.querySelector('#save-btn');
 
-function increment() {
+
+incrementBtn.onclick = function increment() {
     count++;
-    document.getElementById('count-el').innerText = count;
+    document.querySelector('#count-el').innerText = count;
 }
 
-function save() {
+saveBtn.onclick = function save() {
     let countDash = count + ' - ';
     saveP.textContent += countDash;
     count = 0;
-    document.getElementById('count-el').innerText = count;
+    document.querySelector('#count-el').innerText = count;
 }
