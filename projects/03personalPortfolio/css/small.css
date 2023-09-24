@@ -11,6 +11,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --medium-orange: #fcaf58;
     --dark-orange: #ff8c42;
     --dark-purple: #4e598c;
+    scroll-behavior: smooth;
 }
 
 body {
