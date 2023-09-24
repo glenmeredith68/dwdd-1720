@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-</head>
-<body>
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section id="about">
+        <h1>Glen Meredith</h1>
+        <h2>an XD designer</h2>
+      </section>
+      <section id="projects">
+        <h2>My Cool Stuff</h2>
+        <div class="parent">
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="https://source.unsplash.com/random/300x300?sig=1" alt="My Icon">
+                    <figcaption>Case Study 1</figcaption>
+                </figure>
+            </a>
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="https://source.unsplash.com/random/300x300?sig=2" alt="My Icon">
+                    <figcaption>Case Study 2</figcaption>
+                </figure>
+            </a>
+            <a href="#" target="_blank">
+                <figure>
+                    <img src="https://source.unsplash.com/random/300x300?sig=3" alt="My Icon">
+                    <figcaption>Case Study 3</figcaption>
+                </figure>
+            </a>
+        </div><!-- end of the parent-->
+      </section>
+      <section id="contact">
+        <h2>Let's Team Up!</h2>
+        <ul>
+            <li><a href="www.linkedin.com/in/glen-meredith"><img src="images/svgIcons/linked-in.svg" alt="LinkedIn logo">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/glen.meredith.33/"><img src="images/svgIcons/facebook.svg" alt="Facebook logo">Facebook</a></li>
+            <li><a href="www.github.com/glenmeredith68"><img src="images/svgIcons/github.svg" alt="Github logo">Github</a></li>
+            <li><a href="mailto:glen.lee.meredith@gmail.com"><img src="images/svgIcons/email.svg" alt="Email icon">Email</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
 
-
+    <script src="js/test-dev.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>

@@ -4,3 +4,105 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+    --light-wieght: 300;
+    --heavy-weight: 700;
+    --light-orange: #f9c784;
+    --medium-orange: #fcaf58;
+    --dark-orange: #ff8c42;
+    --dark-purple: #4e598c;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Ubuntu Condensed', Arial, sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: var(--dark-purple);
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: 10000 ;
+}
+nav a {
+    padding: 1rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: var(--heavy-weight);
+}
+
+nav a:hover {
+    background-color: var(--dark-orange);
+    /* color: #4e598c; */
+}
+
+
+
+section {
+    padding-top: 50px;
+}
+
+
+section#about {
+    background-color: var(--light-orange);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#projects {
+    background-color: var(--medium-orange);
+    min-height: 100vh;
+}
+
+div.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.parent a {
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+    margin-bottom: 1rem;
+}
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+}
+.parent a {
+    text-decoration: none;
+    color: black;
+}
+.parent a {
+    transition: transform .2s ease;
+}
+.parent a:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 1px var(--dark-purple);
+    border-radius: 5px;
+    color: white;
+}
+section#contact {
+    background-color: var(--dark-orange);
+    height: 100vh;
+}
