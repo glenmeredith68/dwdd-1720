@@ -96,13 +96,42 @@ figure img {
 .parent a {
     transition: transform .2s ease;
 }
-.parent a:hover {
-    transform: scale(1.03);
-    box-shadow: 2px 2px 1px var(--dark-purple);
-    border-radius: 5px;
-    color: white;
-}
+
 section#contact {
     background-color: var(--dark-orange);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+section#contact a img {
+    height: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+section#contact li {
+    text-align: center;
+}
+section#contact li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: transform .2s ease;
+}
+
+section#contact li a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+
 }

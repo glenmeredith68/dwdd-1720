@@ -11,5 +11,12 @@ div.parent a {
     flex-basis: 50%;
 }
 
+.parent a:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 1px var(--dark-purple);
+    border-radius: 5px;
+    color: white;
+}
+
     
 } /* end media query*/
