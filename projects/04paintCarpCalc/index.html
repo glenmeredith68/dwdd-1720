@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paint & Flooring Calculator</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+  </head>
+  <body>
+    <header>
+      <h1>Paint & Flooring Calculator</h1>
+    </header>
+    <main>
+        <div class="data">
+            <label for="width">Room Width: <input type="number" id="width" value="10"> feet</label>
+            <label for="width">Room Depth: <input type="number" id="depth" value="9"> feet</label>
+            <label for="width">Wall Height: <input type="number" id="height" value="5"> feet</label>
+            <label for="width">Paint Quality: <select id="quality">
+                <option value="" disabled selected>Select a Paint</option>
+                <option value="600">Premium</option>
+                <option value="500">Standard</option>
+                <option value="400">Economy</option>
+            </select></label>
+            <button id="calculate">Calculate</button>
+        </div>
 
-</head>
-<body>
-    
+        <section>
+            <div>
+                <h2>Paint Supplies</h2>
+                <ul id="paint"></ul>
+            </div>
+            <div>
+                <h2>Carpet</h2>
+                <ul id="carpet"></ul>
+            </div>
+        </section>
 
+
+    </main>
+    <footer>© Glen Meredith • <span id="year">2023</span></footer>
 
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
