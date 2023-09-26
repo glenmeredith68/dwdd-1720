@@ -1,0 +1,37 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    --light-wieght: 300;
+    --heavy-weight: 700;
+    --light-orange: #f9c784;
+    --medium-orange: #fcaf58;
+    --dark-orange: #ff8c42;
+    --dark-purple: #4e598c;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Ubuntu Condensed', Arial, sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--dark-purple);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+
+footer {
+    background-color: var(--dark-orange);
+}
