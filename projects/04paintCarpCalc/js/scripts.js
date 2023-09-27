@@ -14,14 +14,38 @@ button.addEventListener("click", () => {
   );
   const qualityName = document.querySelector("#quality").dataset.name;
 
-  let carpet = Math.ceil((width * depth) / 9);
-  carpet += " yards of carpet";
+// logs
+console.log('width = ' + width);
+console.log('height = ' + height);
+console.log('depth = ' + depth);
+console.log('quality = ' + quality);
 
-  let tack = width * 2 + depth * 2;
-  tack += "feet of tackstrip";
+
+
+let carpet = Math.ceil((width * depth) / 9);
+carpet += " yards of carpet";
+console.log('carp = ' + carpet);
+
+let tack = width * 2 + depth * 2;
+tack += " feet of tackstrip";
+console.log('tack = ' + tack);
 
   let walls = width * height * 2 + depth * height * 2;
+  console.log(walls);
   let gallons = Math.ceil(walls / quality);
-  gallons += `gallons of ${qualityName}paint`;
+  gallons += `gallons of ${qualityName}paint for the walls`;
   console.log(gallons);
+
+  let ceiling = Math.ceil(width * depth / 400);
+  console.log('ceiling needs ' + ceiling);
+
+  let primer = ceiling + walls;
+
+// adding to list now
+let myList = document.querySelector('#paint');
+let listItem = document.createElement('li');
+listItem.textContent = carpet;
+myList.appendChild(listItem);
+
+
 }); // end of the calculate function
