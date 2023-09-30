@@ -12,7 +12,6 @@ button.addEventListener("click", () => {
   const quality = Number(
     document.querySelector("#quality").selectedOptions[0].value
   );
-  const qualityName = document.querySelector("#quality").dataset.name;
 
 // logs
 console.log('width = ' + width);
@@ -33,7 +32,7 @@ console.log('tack = ' + tack);
   let walls = width * height * 2 + depth * height * 2;
   console.log(walls);
   let gallons = Math.ceil(walls / quality);
-  gallons += `gallons of ${qualityName}paint for the walls`;
+  gallons += ` gallons of ${paintType} paint for the walls`;
   console.log(gallons);
 
   let ceiling = Math.ceil(width * depth / 400);
@@ -42,10 +41,22 @@ console.log('tack = ' + tack);
   let primer = ceiling + walls;
 
 // adding to list now
-let myList = document.querySelector('#paint');
-let listItem = document.createElement('li');
-listItem.textContent = carpet;
-myList.appendChild(listItem);
+let carpList = document.querySelector('#carpet');
+let tackLi = document.createElement('li');
+let carpetLi = document.createElement('li');
+carpetLi.textContent = carpet;
+tackLi.textContent = tack;
+carpList.appendChild(carpetLi);
+carpList.appendChild(tackLi);
+
+let paintList = document.querySelector('#paint');
+let primerLi = document.createElement('li');
+let gallonsLi = document.createElement('li');
+primerLi.textContent = primer;
+gallonsLi.textContent = gallons;
+paintList.appendChild(primerLi);
+paintList.appendChild(gallonsLi);
+
 
 
 }); // end of the calculate function
