@@ -24,6 +24,9 @@ html {
 body {
   font-family: "Ubuntu", Arial, sans-serif;
 }
+main {
+  min-height: 82vh
+}
 h1,
 h2,
 h3 {
@@ -68,6 +71,16 @@ h2 {
   box-shadow: 2px 2px 1px var(--dark-purple);
   font-weight: 500;
   font-size: 1.4rem;
+}
+
+.data button:hover {
+  box-shadow: 5px 5px 1px var(--dark-purple);
+}
+
+.data button:active {
+  background-color: var(--dark-purple);
+  color: white;
+  box-shadow: 5px 5px 1px var(--dark-orange);  
 }
 
 section {

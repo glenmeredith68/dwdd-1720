@@ -12,6 +12,9 @@ let addListItems = (listId, message) => {
 
 let button = document.querySelector("#calculate");
 button.addEventListener("click", () => {
+  // clean out existing lists
+  document.querySelector('#paint').innerHTML = '';
+  document.querySelector('#carpet').innerHTML = '';
   const width = Number(document.querySelector("#width").value);
   const depth = Number(document.querySelector("#depth").value);
   const height = Number(document.querySelector("#height").value);
