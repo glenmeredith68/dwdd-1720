@@ -1,37 +1,101 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 :root {
-    --light-wieght: 300;
-    --heavy-weight: 700;
-    --light-orange: #f9c784;
-    --medium-orange: #fcaf58;
-    --dark-orange: #ff8c42;
-    --dark-purple: #4e598c;
-    scroll-behavior: smooth;
+  --light-wieght: 300;
+  --heavy-weight: 700;
+  --light-orange: #f9c784;
+  --medium-orange: #fcaf58;
+  --dark-orange: #ff8c42;
+  --dark-purple: #4e598c;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: "Ubuntu", Arial, sans-serif;
 }
-h1, h2, h3 {
-    font-family: 'Ubuntu Condensed', Arial, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
 }
 h1 {
-    font-size: 2.5rem;
-    color: var(--dark-purple);
+  font-size: 2.5rem;
+  color: var(--dark-purple);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: black;
+  font-size: 1.5rem;
+  color: black;
 }
 
+.data {
+  margin: 1rem 4%;
+  padding: 1rem 4%;
+  background-color: var(--light-orange);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px var(--dark-purple);
+}
 
+.data label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.data input {
+  width: 60px;
+}
+
+.data button {
+  width: 100%;
+  padding: .5rem 0;
+  margin: 1rem 0;
+  background-color: var(--dark-orange);
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px var(--dark-purple);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section div {
+  margin: 1rem 4%;
+  flex-basis: 96%;
+  background-color: var(--medium-orange);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px var(--dark-purple); 
+}
+
+section h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: .5rem 0;
+  background-color: var(--dark-purple);
+  color: white;
+  border-radius: 5px 5px 0 0 ;
+}
 
 footer {
-    background-color: var(--dark-orange);
+  background-color: var(--dark-orange);
+  padding: 1rem 2%;
+  text-align: center;
 }
+
