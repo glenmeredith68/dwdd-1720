@@ -17,14 +17,18 @@
   body {
     font-family: "Ubuntu", Arial, sans-serif;
     background-color: var(--dark-purple);
+    text-align: center;
+    margin: 2%;
   }
   h1,
   h2,
   h3 {
     font-family: "Ubuntu Condensed", Arial, sans-serif;
     color: var(--dark-orange);
-    border-bottom: 2px solid var(--dark-orange);
-    text-align: center;
+    border-bottom: 4px solid var(--dark-orange);
+    width: fit-content;
+    margin: 2rem auto;
+    display: block;
   }
   p {
     color: white;
@@ -32,4 +36,39 @@
   }
   #message-el {
     font-style: italic;
+  }
+  /* button {
+    color: var(--dark-purple);
+    background-color: var(--dark-orange);
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    
+  } */
+
+    button {
+    width: 100%;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    margin-bottom: 0;
+    background-color: var(--dark-orange);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px var(--dark-purple);
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  
+button:hover {
+    box-shadow: 5px 5px 1px black;
+  }
+  
+ button:active {
+    background-color: var(--dark-purple);
+    border: 2px solid var(--dark-orange);
+    color: white;
+    box-shadow: 5px 5px 1px var(--dark-orange);  
   }

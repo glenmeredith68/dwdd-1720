@@ -5,6 +5,9 @@ let sum = firstCard + secondCard;
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
+let messageEl = document.querySelector('#message-el');
+let sumP = document.querySelector('#sum-el');
+let cardsP = document.querySelector('#cards-el');
 
 // start button
 let startButton = document.querySelector("#startButton");
@@ -20,5 +23,14 @@ startButton.addEventListener("click", () => {
   }
 
   // cash out!
-  console.log(message);
+  messageEl.textContent = message;
+  sumP.textContent =`Sum: ${sum}`;
+  cardsP.textContent =`Cards: ${firstCard}, ${secondCard}`;
+});
+
+
+// new card button 
+let newCardButton = document.querySelector('#newCard');
+newCardButton.addEventListener('click', () => {
+    console.log('drawing new card');
 });
