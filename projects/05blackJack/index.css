@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --light-wieght: 300;
+    --heavy-weight: 700;
+    --light-orange: #f9c784;
+    --medium-orange: #fcaf58;
+    --dark-orange: #ff8c42;
+    --dark-purple: #4e598c;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Ubuntu", Arial, sans-serif;
+    background-color: var(--dark-purple);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Ubuntu Condensed", Arial, sans-serif;
+    color: var(--dark-orange);
+    border-bottom: 2px solid var(--dark-orange);
+    text-align: center;
+  }
+  p {
+    color: white;
+    text-align: center;
+  }
+  #message-el {
+    font-style: italic;
+  }
