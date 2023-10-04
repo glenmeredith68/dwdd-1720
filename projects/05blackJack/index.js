@@ -4,20 +4,21 @@ let secondCard = 8;
 let sum = firstCard + secondCard;
 let hasBlackjack = false;
 let isAlive = true;
-let message = '';
+let message = "";
 
-if (sum <= 20) {
-    message = 'Draw new card?';
-} else if (sum === 21) {
+// start button
+let startButton = document.querySelector("#startButton");
+startButton.addEventListener("click", () => {
+  if (sum <= 20) {
+    message = "Draw new card?";
+  } else if (sum === 21) {
     hasBlackjack = true;
-    message = 'Woohoo blackjack!';
-} else {
+    message = "Woohoo blackjack!";
+  } else {
     isAlive = false;
-    message = 'You lose!';
-}
+    message = "You lose!";
+  }
 
-// cash out! 
-console.log(message);
-
-
-// draw to screen
+  // cash out!
+  console.log(message);
+});
