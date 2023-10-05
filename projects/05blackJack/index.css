@@ -49,6 +49,7 @@
 
     button {
     width: 100%;
+    max-width: 30rem;
     padding: .5rem 0;
     margin: 1rem 0;
     margin-bottom: 0;
