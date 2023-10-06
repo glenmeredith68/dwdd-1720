@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wellness Tracker</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="newProfile">
-        <p>Please complete your order</p>
-        <form>
-            <label>First: <input required type="text" name="first" id="first" required></label>
-            <label>Last: <input required type="text" name="last" id="last" required></label>
-            <label>Select Menu Choice<select name="food" id="food">
-                <option value="https://openmoji.org/data/color/svg/1F355.svg">Pizza</option>
-                <option value="https://openmoji.org/data/color/svg/1F35B.svg">Curry</option>
-                <option value="https://openmoji.org/data/color/svg/1F35C.svg">Ramen</option>
-                <option value="https://openmoji.org/data/color/svg/1F32F.svg">Burrito</option>
-                <option value="https://openmoji.org/data/color/svg/1F96E.svg">Moon Cake</option>
-
-            </select></label>
-            <input type="submit" value="Save Profile" id="saveProfile">
-        </form>
+      <p>Please complete your order</p>
+      <form>
+        <label
+          >First: <input required type="text" name="first" id="first" required
+        /></label>
+        <label
+          >Last: <input required type="text" name="last" id="last" required
+        /></label>
+        <label
+          >Select Menu Choice<select name="food" id="food">
+            <option value="https://openmoji.org/data/color/svg/1F355.svg">
+              Pizza
+            </option>
+            <option value="https://openmoji.org/data/color/svg/1F35B.svg">
+              Curry
+            </option>
+            <option value="https://openmoji.org/data/color/svg/1F35C.svg">
+              Ramen
+            </option>
+            <option value="https://openmoji.org/data/color/svg/1F32F.svg">
+              Burrito
+            </option>
+            <option value="https://openmoji.org/data/color/svg/1F96E.svg">
+              Moon Cake
+            </option>
+          </select></label
+        >
+        <input type="submit" value="Save Profile" id="saveProfile" />
+      </form>
     </div>
 
     <div id="myProfile">
-        <section>
-            <img src="" alt="" id="emoji">
-            <p><span id="fName">The</span> <span id="lName">customer</span> ordered <span id="foodChoice">food</span>.</p>
-            <button id="deleteButton">Delete Profile</button>
-        </section>
+      <section>
+        <img src="" alt="" id="emoji" />
+        <p>
+          <span id="fName">The</span> <span id="lName">customer</span> ordered
+          <span id="foodChoice">food</span>.
+        </p>
+        <button id="deleteButton">Delete Profile</button>
+      </section>
     </div>
 
-
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>

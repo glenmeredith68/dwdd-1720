@@ -28,8 +28,11 @@ deleteBtn.addEventListener('click', () => {
 
 const check = localStorage.getItem('order-first');
 if (check === null) {
-    document.write('Please enter all the values.');
+    document.querySelector('#newProfile').className = 'show-me';
+    document.querySelector('#myProfile').className = 'hide-me';
 } else {
+    document.querySelector('#newProfile').className = 'hide-me';
+    document.querySelector('#myProfile').className = 'show-me';
     document.querySelector('#fName').textContent = localStorage.getItem('order-first');
     document.querySelector('#lName').textContent = localStorage.getItem('order-last');
     document.querySelector('#foodChoice').textContent = localStorage.getItem('order-food-text');
