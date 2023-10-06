@@ -94,5 +94,8 @@ button {
     display: block;
     width: 70vw;
     margin: 0 auto;
+}
 
+img {
+    max-height: 200px;
 }
