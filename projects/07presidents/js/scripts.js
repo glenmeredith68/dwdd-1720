@@ -1,22 +1,30 @@
-const stoogeData = [{
-    "name": "Curly",
-    "born": 1903
-},
-{
-    "name":"Moe",
-    "born":"1897"
-}]
+import {presidents} from '../data/presidents.js';
+
+console.log(presidents);
 
 
-const cardPointer = document.querySelector('#cards');
+const presTarget = document.querySelector('#cards');
+const pathStart = '//www.loc.gov/static/portals/free-to-use/public-domain/presidential-portraits/';
 
-let theName = document.createElement('h2');
-let theBirth = document.createElement('p');
 
-theName.textContent = stoogeData[0].name;
-theBirth.textContent = stoogeData[0].born;
+for (let i = 0; i < presidents.length; i++) {
+    let barDiv = document.createElement('div');
+    barDiv.innerHTML = `<h3>${presidents[i].name}</h3>`;
+    
+    
+    let myImage = document.createElement('img');
+    myImage.setAttribute('src', pathStart + presidents[i].photo);
+    myImage.setAttribute('alt', presidents[i].name);
 
-cardPointer.appendChild(theName);
-cardPointer.appendChild(theBirth);
+    let myCaption = document.createElement('figcaption');
+    myCaption.innerHTML = `Served ${presidents[i].took_office} to ${presidents[i].left_office}<br>Lived from ${presidents[i].born} to ${presidents[i].died}<br>Party: ${presidents[i].party} party`;
 
-function~
+    let myFigure = document.createElement('figure');
+    myFigure.appendChild(barDiv);
+    myFigure.appendChild(myImage);
+    myFigure.appendChild(myCaption);
+
+    presTarget.appendChild(myFigure);
+    
+    
+} // end of loop
