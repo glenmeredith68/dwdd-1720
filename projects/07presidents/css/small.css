@@ -4,3 +4,28 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+    --light-wieght: 300;
+    --heavy-weight: 700;
+    --light-orange: #f9c784;
+    --medium-orange: #fcaf58;
+    --dark-orange: #ff8c42;
+    --dark-purple: #4e598c;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Ubuntu", Arial, sans-serif;
+    background-color: var(--dark-purple);
+    color: white;
+    margin: 2%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Ubuntu Condensed", Arial, sans-serif;
+    color: var(--dark-orange);
+    border-bottom: 4px solid var(--dark-orange);
+    width: fit-content;
+
+  }
