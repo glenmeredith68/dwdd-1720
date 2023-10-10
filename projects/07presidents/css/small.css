@@ -75,7 +75,7 @@ figure:hover {
   max-width: 350px;
 }
 footer {
-  background-color: var(--dark-orange);
+  margin: 1rem;
   padding: 1rem 2%;
   text-align: center;
 }
