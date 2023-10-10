@@ -1,4 +1,12 @@
 @media only screen and (min-width: 35rem) {
-
+    body {
+        margin: 2rem;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
     
 } /* end media query*/
