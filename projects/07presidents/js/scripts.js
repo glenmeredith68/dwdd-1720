@@ -1,6 +1,10 @@
 import {presidents} from '../data/presidents.js';
 
-console.log(presidents);
+let x = new Date();
+let year = x.getFullYear();
+let yearSpan = document.querySelector("#year");
+yearSpan.textContent = year;
+
 
 
 const presTarget = document.querySelector('#cards');
