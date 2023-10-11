@@ -50,7 +50,7 @@ header {
   gap: 1rem;
 }
 
- section {
+section {
   border-radius: 5px;
   background-color: var(--light-orange);
   color: black;
@@ -67,10 +67,10 @@ header {
   width: 100%;
 }
 .grid section div {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   width: fit-content;
   margin: 0 auto;
 }
@@ -82,9 +82,15 @@ header {
 .list section {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
 }
+
 .list section h2 {
-  columns: 0;
+  /* why does this column-span:all; not work? I wanted to use it instead of grid-column */
+  /* column-span: all; */
+  grid-column: 1 / 3;
+  text-align: center;
+  margin: 0;
 }
 
 .list section img {
@@ -92,10 +98,7 @@ header {
   max-width: 100px;
 }
 
-
-
-
-footer {
+.list section footer {
   text-align: center;
   margin: 2rem;
 }
