@@ -8,6 +8,13 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
       }
+
+      header img {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+      }
+
       .list {
         gap: 2rem;
       }

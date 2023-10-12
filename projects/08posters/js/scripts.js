@@ -14,7 +14,7 @@ for (let i = 0; i < films.length; i++) {
   let card = document.createElement("section");
   let h2 = document.createElement("h2");
   let img = document.createElement("img");
-  let spanWrapper = document.createElement('div');
+  let spanWrapper = document.createElement("div");
   let span1 = document.createElement("span");
   let span2 = document.createElement("span");
   let span3 = document.createElement("span");
@@ -28,14 +28,23 @@ for (let i = 0; i < films.length; i++) {
   spanWrapper.appendChild(span3);
 
   h2.textContent = films[i].title;
-  img.src = swPostersLink + (i + 1) + '.jpg';
+  img.src = swPostersLink + (i + 1) + ".jpg";
   span1.textContent = `Directed by: ${films[i].director}`;
   span3.textContent = `Produced by: ${films[i].producer}`;
   span2.textContent = `Release Date: ${films[i].release_date}`;
 }
 
 // list grid switch button functionlity
-let gridBtn = document.querySelector('#grid');
-let listBtn = document.querySelector('#list');
-gridBtn.addEventListener('click', () => main.className = 'grid');
-listBtn.addEventListener('click', () => main.className = 'list');
+let gridBtn = document.querySelector("#grid");
+let listBtn = document.querySelector("#list");
+gridBtn.addEventListener("click", () => {
+    main.className = "grid";
+    listBtn.classList.toggle("hide");
+    gridBtn.classList.toggle("hide");
+
+});
+listBtn.addEventListener("click", () => {
+    listBtn.classList.toggle("hide");
+    gridBtn.classList.toggle("hide");
+  main.className = "list";
+});
