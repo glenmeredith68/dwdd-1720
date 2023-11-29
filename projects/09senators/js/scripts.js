@@ -59,9 +59,10 @@ function filterCards(query) {
         }
     }
 }
-filterCards();
+filterCards('all');
 
 function makeCard(senator) {
+    console.log(senator.party);
     // create html elements
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -83,6 +84,13 @@ function makeCard(senator) {
     descrip.textContent = senator.party + ' from ' + senator.state;
     phone.href = `tel: ${senator.phone}`;
     phone.textContent = senator.phone;
+
+    // color R or D borders
+    if (senator.party = 'R') {
+        card.style.border = '3px solid red';
+    } else if (senator.party = 'D') {
+        card.style.border = '3px solid blue'
+    };
 }
 
 // add filter button functionality
