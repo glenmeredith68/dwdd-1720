@@ -15,10 +15,11 @@ x.forEach( person => {
     const card = document.createElement('section');
     const img = document.createElement('img');
     const urlArray = person.url.split('/');
-    img.src = `https://starwars-visualguide.com/assets/img/characters/${urlArray[5]}.jpg`
+    img.src = `https://starwars-visualguide.com/assets/img/characters/${urlArray[5]}.jpg`;
+    img.alt = person.name;
 
 
-    const caption = document.createElement('figcaption');
+    const caption = document.createElement('h2');
     caption.textContent = person.name;
 
     // assemble parts 
