@@ -86,9 +86,9 @@ function makeCard(senator) {
     phone.textContent = senator.phone;
 
     // color R or D borders
-    if (senator.party = 'R') {
+    if (senator.party == 'R') {
         card.style.border = '3px solid red';
-    } else if (senator.party = 'D') {
+    } else if (senator.party == 'D') {
         card.style.border = '3px solid blue'
     };
 }
