@@ -4,8 +4,8 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    section {
+    /* section {
         flex-basis: 40%;
-    }
+    } */
     
 } /* end media query*/
