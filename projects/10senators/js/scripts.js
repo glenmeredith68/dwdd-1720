@@ -60,9 +60,6 @@ function filterCards(query, imgSize) {
         } else if ((query == 'democrat') && (senators[i].party == 'D')) {
             makeCard(senators[i], imgSize);
         }
-        else {
-            makeCard(senators[i], imgSize);
-        }
     }
 }
 filterCards('all', imgSize);
@@ -138,6 +135,7 @@ menBtn.addEventListener('click', () => {
     menBtn.classList.add('selected')
     republicanBtn.classList.remove('selected')
     democratBtn.classList.remove('selected')
+    selectedVal = menVal;
     filterCards('men', imgSize);
 })
 republicanBtn.addEventListener('click', () => {
@@ -146,6 +144,7 @@ republicanBtn.addEventListener('click', () => {
     menBtn.classList.remove('selected')
     republicanBtn.classList.add('selected')
     democratBtn.classList.remove('selected')
+    selectedVal = repVal;
     filterCards('republican', imgSize);
 })
 democratBtn.addEventListener('click', () => {
@@ -154,5 +153,6 @@ democratBtn.addEventListener('click', () => {
     menBtn.classList.remove('selected')
     republicanBtn.classList.remove('selected')
     democratBtn.classList.add('selected')
+    selectedVal = demVal;
     filterCards('democrat', imgSize);
 })
