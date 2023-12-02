@@ -16,18 +16,18 @@
   </head>
   <body>
     <header>
-      <h1 id="town">Weather for Medway</h1>
-      <span><img src="images/cog.svg" alt="Settings" /></span>
+      <h1 id="town">Weather</h1>
+      <span id="cog"><img src="images/cog.svg" alt="Settings" /></span>
     </header>
     <main>
-        <section id="weatherCard">
-            <aside>
-                <p>Enter a Zipcode in the US</p>
-                <input type="number" name="zipcode" id="new-zip" placeholder="95806">
-                <button class="apply-zip">Set New Zipcode</button>
-
-            </aside>
+        <section id="weather-card">
         </section>
+        <aside>
+            <p>Enter a Zipcode in the US</p>
+            <input type="number" name="zipcode" id="new-zip" placeholder="02053">
+            <button id="apply-zip">Set New Zipcode</button>
+
+        </aside>
     </main>
     <footer>© Glen Meredith • <span id="year">2023</span></footer>
     <script src="js/scripts.js"></script>
