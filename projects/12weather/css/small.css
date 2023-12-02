@@ -52,3 +52,12 @@ header img {
   padding-right: 0;
   width: 40px;
 }
+
+aside {
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+}
