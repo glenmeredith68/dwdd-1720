@@ -1,3 +1,10 @@
+// footer functionality 
+let x = new Date();
+let year = x.getFullYear();
+let yearSpan = document.querySelector("#year");
+yearSpan.textContent = year;
+
+
 const nav = document.querySelector("nav");
 const main = document.querySelector("main");
 

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet"
-  />
-
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <span>Weather for Medway</span>
-        <span><img src="images/cog.svg" alt="Settings"></span>
+      <h1 id="town">Weather for Medway</h1>
+      <span><img src="images/cog.svg" alt="Settings" /></span>
     </header>
+    <main>
+        <section id="weatherCard">
+            <aside>
+                <p>Enter a Zipcode in the US</p>
+                <input type="number" name="zipcode" id="new-zip" placeholder="95806">
+                <button class="apply-zip"></button>
 
-
+            </aside>
+        </section>
+    </main>
+    <footer>© Glen Meredith • <span id="year">2023</span></footer>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
