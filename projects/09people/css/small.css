@@ -50,21 +50,33 @@ header {
 }
 
 nav {
-    display: flex;
-flex-wrap: wrap;
-gap: .5rem;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 button {
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(var(--light-orange),var(--medium-orange), var(--dark-orange));
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    var(--light-orange),
+    var(--medium-orange),
+    var(--dark-orange)
+  );
 }
 button:hover {
-    background: linear-gradient(var(--dark-orange),var(--medium-orange), var(--light-orange));
+  background: linear-gradient(
+    var(--dark-orange),
+    var(--medium-orange),
+    var(--light-orange)
+  );
 }
-button:active{
-    background: linear-gradient(var(--dark-purple), var(--medium-orange), var(--light-orange));
+button:active {
+  background: linear-gradient(
+    var(--dark-purple),
+    var(--medium-orange),
+    var(--light-orange)
+  );
 }
 
 .cards-here {
@@ -99,7 +111,6 @@ section p {
   text-align: center;
 }
 
-
 footer {
-    text-align: center;
+  text-align: center;
 }

@@ -4,3 +4,102 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+    --light-wieght: 300;
+    --heavy-weight: 700;
+    --light-orange: #f9c784;
+    --medium-orange: #fcaf58;
+    --dark-orange: #ff8c42;
+    --dark-purple: #4e598c;
+  }
+  
+  body {
+    font-family: "Ubuntu", Arial, sans-serif;
+    background-color: var(--dark-purple);
+    color: white;
+    margin: 1rem;
+  }
+  h1 {
+    font-family: "Ubuntu Condensed", Arial, sans-serif;
+    color: var(--dark-orange);
+    margin: auto;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    display: block;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  h3 {
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  button {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(
+      var(--light-orange),
+      var(--medium-orange),
+      var(--dark-orange)
+    );
+  }
+  button:hover {
+    background: linear-gradient(
+      var(--dark-orange),
+      var(--medium-orange),
+      var(--light-orange)
+    );
+  }
+  button:active {
+    background: linear-gradient(
+      var(--dark-purple),
+      var(--medium-orange),
+      var(--light-orange)
+    );
+  }
+  .selected {
+border: 3px solid var(--dark-orange);
+border-radius: 5px;
+background: var(--dark-purple);
+color: white;
+  }
+ .selected:hover {
+    color: black;
+    border: 3px dashed var(--dark-orange);
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-block:2rem;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  footer {
+    text-align: center;
+  }
+
