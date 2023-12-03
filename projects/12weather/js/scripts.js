@@ -73,7 +73,7 @@ zipButton.addEventListener('click', () => {
     let newZip = document.querySelector('#new-zip').value;
     if (newZip.length == 5){
     localStorage.setItem('zip', newZip);
-    } else
+    };
     window.location.reload();
 })
 
