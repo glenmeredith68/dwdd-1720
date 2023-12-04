@@ -55,8 +55,28 @@ function displayWeather(weatherData){
     // icon
     const weatherIcon = document.createElement('img');
     weatherIcon.src = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
-    weatherIcon.alt = weatherData.weather[0].description
+    weatherIcon.alt = weatherData.weather[0].description;
     weatherCard.appendChild(weatherIcon);
+
+    // description
+    const weatherDescription = document.createElement('p');
+    weatherDescription.className = 'weather-description';
+    weatherDescription.textContent = weatherData.weather[0].description;
+    weatherCard.appendChild(weatherDescription);
+
+    // add sunrise/sunset
+    const sunRiseSet = document.createElement('p');
+    sunRiseSet.classList.add('sunrise');
+    time = d.getTime();
+    let sunrise = new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});;
+    let sunset = new Date(weatherData.sys.sunset * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+    console.log(time > (weatherData.sys.sunrise * 1000));
+    if (time < (weatherData.sys.sunrise * 1000)) {
+        sunRiseSet.textContent = `Sunrise: ${sunrise}`;
+    } else {
+        sunRiseSet.textContent = `Sunset: ${sunset}`;
+    }
+    weatherCard.appendChild(sunRiseSet);
 }
 
 // ask for new zipcode

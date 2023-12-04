@@ -89,6 +89,10 @@ section {
     margin: 1rem;
 }
 
+.weather-description {
+    text-transform: capitalize;
+}
+
 
 footer {
     text-align: center;
