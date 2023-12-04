@@ -10,9 +10,6 @@ yearSpan.textContent = year;
 const nav = document.querySelector('nav');
 const viewer = document.querySelector('.viewer');
 
-// months
-const months = ['January', 'February', 'March','April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 // nav items 
 products.forEach(product => {
     const button = document.createElement('button');
