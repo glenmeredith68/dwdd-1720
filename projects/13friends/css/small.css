@@ -1,6 +1,74 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+:root {
+  --light-wieght: 300;
+  --heavy-weight: 700;
+  --light-orange: #f9c784;
+  --medium-orange: #fcaf58;
+  --dark-orange: #ff8c42;
+  --dark-purple: #4e598c;
+}
+
+body {
+  font-family: "Ubuntu", Arial, sans-serif;
+  background-color: var(--dark-purple);
+  color: white;
+}
+h1 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  color: white;
+  width: fit-content;
+}
+
+h3 {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .5rem 2%;
+}
+nav button {
+  flex-basis: 46%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+display: flex;
+flex-direction: column;
+}
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+footer { 
+  text-align: center;
+  color: white;
+}
