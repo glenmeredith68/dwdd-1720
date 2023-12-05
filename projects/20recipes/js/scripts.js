@@ -19,7 +19,13 @@ ham.addEventListener('click', () => {
 recipes.forEach(recipe => {
     const button = document.createElement('button');
     button.textContent = recipe.name;
-    button.addEventListener('click', () => showRecipe(recipe));
+    button.addEventListener('click', () => {
+        showRecipe(recipe);
+
+        let buttons = Array.from(aside.children);
+        buttons.foreach(x => x.classList.remove('selected'));
+        button.classList.add('selected');
+    });
 
     aside.appendChild(button);
 })

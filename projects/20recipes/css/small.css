@@ -55,7 +55,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+main{
+  height: calc(100vh - 9rem);
+}
 .hamburger {
   background-color: rgba(255, 139, 66, 0);
   border: 0;
@@ -78,6 +80,11 @@ aside button {
 aside button:hover{
   background-color: #f9c784;
   color: black;
+}
+.selected {
+  background-color: #4e598c;
+  color: white;
+  border: 3px solid white;
 }
 .show {
   display: flex;
@@ -107,9 +114,11 @@ img {
 
 ul, ol {
   font-weight: 600;
+  color: var(--light-orange);
 }
 li {
   font-weight: 400;
+  color: white;
 }
 
 footer {
