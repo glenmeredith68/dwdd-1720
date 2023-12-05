@@ -1,3 +1,10 @@
 @media only screen and (min-width: 60rem) {
 
+    header {
+        flex-direction: row;
+    }
+    aside button {
+        flex-basis: auto;
+    }
+
 } /* end media query*/

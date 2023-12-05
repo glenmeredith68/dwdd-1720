@@ -43,8 +43,10 @@ h3 {
 }
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   background-image: linear-gradient(
       to bottom,
       rgba(69, 78, 126, 0.9),
@@ -54,8 +56,28 @@ header {
   background-size: cover;
 }
 
+.hamburger {
+  background-color: rgba(255, 139, 66, 0);
+  border: 0;
+  font-size: 3rem;
+  color: white;
+  padding: .5rem;
+  padding-inline: .6rem;
+}
+
 aside {
   display: none;
+}
+aside button {
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--dark-orange);
+  color: white;
+}
+aside button:hover{
+  background-color: #f9c784;
+  color: black;
 }
 .show {
   display: flex;
@@ -64,13 +86,30 @@ aside {
   position: absolute;
   top: 3.5rem;
   right: 2rem;
-  background-color: var(--dark-orange);
+  background-color: var(--light-orange);
   color: white;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 5px;
-  border: 3px solid white;
   box-shadow: 2px 2px 5px black;
 text-align: center;
+}
+
+section {
+  width: 100%;
+  padding: 1rem .7rem;
+  max-width: 900px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+ul, ol {
+  font-weight: 600;
+}
+li {
+  font-weight: 400;
 }
 
 footer {
