@@ -49,10 +49,28 @@ header {
       to bottom,
       rgba(69, 78, 126, 0.9),
       rgba(255, 139, 66, 0.5) 90%
-    ),
-    url("../images/camera.jpg");
+    );
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+aside {
+  display: none;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  background-color: var(--dark-orange);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid white;
+  box-shadow: 2px 2px 5px black;
+text-align: center;
 }
 
 footer {
