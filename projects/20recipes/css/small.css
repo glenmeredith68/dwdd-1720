@@ -1,0 +1,62 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-wieght: 300;
+  --heavy-weight: 700;
+  --light-orange: #f9c784;
+  --medium-orange: #fcaf58;
+  --dark-orange: #ff8b42;
+  --dark-purple: #4e598c;
+}
+
+body {
+  font-family: "Ubuntu", Arial, sans-serif;
+  background-color: var(--dark-purple);
+  color: white;
+}
+h1 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  color: white;
+  width: fit-content;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(69, 78, 126, 0.9),
+      rgba(255, 139, 66, 0.5) 90%
+    ),
+    url("../images/camera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
