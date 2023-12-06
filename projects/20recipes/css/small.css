@@ -110,6 +110,8 @@ section {
 img {
   width: 100%;
   max-width: 500px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
 }
 
 ul, ol {
